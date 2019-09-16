@@ -9,10 +9,13 @@ public class RetirementCalculator {
         System.out.println("What is your current age?");
         Scanner scanner = new Scanner(System.in);
         int currentAge = scanner.nextInt();
+
         System.out.println("At what age would you like to retire?");
         int retiringAge = scanner.nextInt();
+
         int remainingYears = retiringAge - currentAge;
         LocalDate date = LocalDate.now();
+
         int currentYear = date.getYear();
         if(remainingYears < 0){
             System.out.println("You can already retire!");
